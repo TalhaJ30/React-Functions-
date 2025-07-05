@@ -9,22 +9,22 @@ import Totallist from "./Totallist.jsx"
 function App() {
   return (
     <>
-      <div className="ml-2 mr-2">
+      <div className="ml-4 mr-4">
         <Input></Input>
       </div>
-      <div className="ml-2 mr-2">
+      <div className="ml-4 mr-4">
         <Button></Button>
       </div>
-      <div className="ml-2 mr-2">
+      <div className="ml-4 mr-4">
         <Todo></Todo>
       </div>
-        <div className="ml-2 mr-2">
+      <div className="ml-4 mr-4">
         <Keyinput></Keyinput>
-        </div>  
-        <div className="ml-2 mr-2">
+      </div>
+      <div className="ml-4 mr-4">
         <Totallist></Totallist>
-        </div>
-                      
+      </div>
+
     </>
   )
 }

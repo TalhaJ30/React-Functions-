@@ -51,15 +51,15 @@ const Todo = () => {
             <div>
                 <Todoinput onNewItem={handleNewItem}></Todoinput>
             </div>
-            <div className=" bg-white border-2 border-blue-400 rounded-2xl shadow-lg shadow-blue-400 mt-1  py-8 px-4">
+            <div className=" bg-white border-2 border-blue-400 rounded-2xl shadow-lg shadow-blue-400 mt-1  py-8 px-4 ">
                 <div className="max-w-2xl mx-auto ">
 
-                    <div className="space-y-4">
+                    <div className="space-y-4 ">
                         {todoItems.map((item, index) => (
-                            <div key={index} className={`bg-white rounded-2xl shadow-[0_0_7px_gray] p-4 flex items-center justify-between w-[100%] ${selectedIndices.includes(index) ? 'shadow-[0_0_8px_blue]' : 'shadow-[0_0_8px_gray]'}`}>
+                            <div key={index} className={`border-2 border-amber-300 flex-wrap bg-white rounded-2xl text-center shadow-[0_0_7px_gray] p-4 flex items-center justify-between w-[100%] ${selectedIndices.includes(index) ? 'shadow-[0_0_8px_blue]' : 'shadow-[0_0_8px_gray]'}`}>
                                 <p className={`text-2xl  ${selectedIndices.includes(index) ? 'text-blue-500' : 'text-gray-500'}`}><span className={`text-gray-500`}>{index}</span> <span className="text-gray-500">{item.symbol}</span> {item.item}</p>
                                 <button
-                                    className={`px-4 py-2 rounded-2xl transition-colors duration-200 flex items-center space-x-2 ml-2.5
+                                    className={`px-4 py-2 rounded-2xl transition-colors duration-200 flex items-center space-x-2 ml-2.5 mt-1.5
                                         ${selectedIndices.includes(index)
                                             ? 'bg-gray-400 cursor-not-allowed'
                                             : 'bg-blue-500 hover:bg-blue-600 text-white'}

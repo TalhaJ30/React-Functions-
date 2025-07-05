@@ -32,7 +32,7 @@ const Totallist = () => {
         setiteminput("");
         settaskinput("");
         setButtonClicked(true);
-        
+
     }
 
     const handleNewItem = (iteminput, taskinput) => {
@@ -77,18 +77,18 @@ const Totallist = () => {
 
             <div>
                 <div className="w-full max-w-lg mx-auto bg-white border-2 border-blue-300 rounded-3xl shadow-xl shadow-blue-200 p-8  transition-all duration-300 mb-6 mt-18">
-                    <div className="flex flex-col sm:flex-row gap-4 items-center flex-wrap">
+                    <div className="flex flex-col gap-3 sm:gap-4 items-stretch sm:items-center w-full">
                         <input
                             type="text"
                             placeholder="Enter Item Name"
-                            className="flex-1 px-5 py-3 border border-blue-200 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 text-lg placeholder-blue-300 bg-blue-50 hover:bg-blue-100 hover:shadow-lg hover:border-blue-400"
+                            className="w-full px-3 sm:px-5 py-2.5 sm:py-3 border border-blue-200 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 text-base sm:text-lg placeholder-blue-300 bg-blue-50 hover:bg-blue-100 hover:shadow-lg hover:border-blue-400"
                             onChange={(event) => iteminputfun(event)}
                             value={iteminput}
                         />
                         <input
                             type="text"
                             placeholder="Enter Task"
-                            className="flex-1 px-5 py-3 border border-blue-200 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 text-lg placeholder-blue-300 bg-blue-50 hover:bg-blue-100 hover:shadow-lg hover:border-blue-400"
+                            className="w-full px-3 sm:px-5 py-2.5 sm:py-3 border border-blue-200 rounded-2xl shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition-all duration-300 text-base sm:text-lg placeholder-blue-300 bg-blue-50 hover:bg-blue-100 hover:shadow-lg hover:border-blue-400"
                             onChange={(event) => taskinputfun(event)}
                             value={taskinput}
                         />
@@ -110,7 +110,7 @@ const Totallist = () => {
                         <div className="w-full max-w-2xl mx-auto space-y-6">
                             {listitem.map((item, index) => (
                                 <div key={index} className={`group ${deletefun.includes(index) ? 'hidden' : ''}`}>
-                                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-blue-200 py-4 px-4 sm:px-6 bg-white/90 rounded-2xl shadow-md 
+                                    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-blue-200 py-4 px-4 sm:px-6 bg-white/90 rounded-4xl shadow-md 
                                         hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.025] transition-all duration-300 ease-in-out
                                         hover:bg-gradient-to-r 
                                         ">
@@ -127,7 +127,7 @@ const Totallist = () => {
                                                 {item.task}
                                             </span>
                                         </div>
-                                        <div className="flex items-center gap-2 mt-4 sm:mt-0">
+                                        <div className="flex items-center gap-2  sm:mt-0">
                                             <button
                                                 className="flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-red-400 to-red-500 text-white rounded-full text-sm font-semibold shadow-md
                                                     hover:from-pink-500 hover:to-red-600 hover:scale-110 hover:shadow-lg
