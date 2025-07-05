@@ -15,7 +15,7 @@ const Key = ({onClickButton}) => {
                                     : item === '=' 
                                         ? 'border-2 border-green-400 text-green-400 bg-green-50 hover:bg-gradient-to-r hover:from-green-400 hover:to-green-500 hover:text-white focus:ring-green-400 hover:shadow-lg hover:shadow-green-300' 
                                         : item === '+' || item === '-' || item === '*' || item === '/' 
-                                            ? 'border-2 border-cyan-400 text-cyan-600 bg-cyan-50 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-500 hover:text-white focus:ring-cyan-400 hover:scale-125 hover:rotate-3 hover:shadow-lg hover:shadow-cyan-300' 
+                                            ? 'border-2 border-cyan-400 text-cyan-600 bg-cyan-50 hover:bg-gradient-to-r hover:from-cyan-400 hover:to-cyan-500 hover:text-white focus:ring-cyan-400 hover:scale-105 hover:rotate-3 hover:shadow-lg hover:shadow-cyan-300' 
                                             : 'border-2 border-blue-400 text-blue-700 bg-blue-100 hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-500 hover:text-white focus:ring-blue-400 hover:shadow-lg hover:shadow-blue-300'
                             }`} 
                             onClick={() => onClickButton(item)} >
