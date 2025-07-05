@@ -5,8 +5,8 @@ const Totallist = () => {
     const Items = [
 
         {
-            item: "Banana",
-            task: "Fruit",
+            item: "Devioand",
+            task: "Company Name",
         },
     ]
 
