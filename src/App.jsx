@@ -21,7 +21,7 @@ function App() {
       <div className="ml-4 mr-4">
         <Keyinput></Keyinput>
       </div>
-      <div className="ml-4 mr-4">
+      <div className="ml-4 mr-4 pb-6">
         <Totallist></Totallist>
       </div>
 
