@@ -76,7 +76,12 @@ const Totallist = () => {
         <>
 
             <div>
-                <div className="w-full max-w-lg mx-auto bg-white border-2 border-blue-300 rounded-3xl shadow-xl shadow-blue-200 p-8  transition-all duration-300 mb-6 mt-18">
+                <div className="flex justify-center items-center mt-18 text-center">
+                    <h1 className="text-4xl font-normal text-gray-800 hover:text-blue-600 transition-all duration-300 hover:scale-110 hover:rotate-1 cursor-pointer text-center">
+                        Todo Application
+                    </h1>
+                </div>
+                <div className="w-full max-w-lg mx-auto bg-white border-2 border-blue-300 rounded-3xl shadow-xl shadow-blue-200 p-8  transition-all duration-300 mb-6 mt-6">
                     <div className="flex flex-col gap-3 sm:gap-4 items-stretch sm:items-center w-full">
                         <input
                             type="text"

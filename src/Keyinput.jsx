@@ -23,7 +23,13 @@ const Keyinput = () => {
     }
     return (
         <>
-            <div className="w-full max-w-md mx-auto bg-white border-2 border-blue-400 rounded-2xl shadow-lg shadow-blue-400 p-6 mt-16">
+        <div>
+            <div className="flex justify-center items-center mt-16 mb-2">
+                <h1 className="text-4xl font-normal text-gray-800 hover:text-blue-600 transition-all duration-300 hover:scale-110 hover:rotate-1 cursor-pointer text-center">
+                    UI Design Calculator
+                </h1>
+            </div>
+        <div className="w-full max-w-md mx-auto bg-white border-2 border-blue-400 rounded-2xl shadow-lg shadow-blue-400 p-6 mt-4">
                 <div className="flex justify-center items-center">
 
                     <input
@@ -35,6 +41,8 @@ const Keyinput = () => {
                 </div>
                 <Key onClickButton={(event) => keys(event)}></Key>
             </div>
+        </div>
+            
         </>
     )
 }
