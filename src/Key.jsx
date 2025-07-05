@@ -9,7 +9,7 @@ const Key = ({onClickButton}) => {
                 {items.map((item, index) => (
                     <div key={index} className="flex justify-center flex-wrap">
                         <button
-                            className={`w-14 h-14 font-normal rounded-xl shadow-md transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 text-2xl flex-wrap ${
+                            className={`w-14 h-14 font-normal rounded-xl shadow-md transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 text-2xl flex-wrap ${
                                 item === 'AC' 
                                     ? 'border-2 border-red-400 text-red-400 bg-red-50 hover:bg-gradient-to-r hover:from-red-400 hover:to-red-500 hover:text-white focus:ring-red-400 pl-1.5 pr-1.5 h-10 w-20 hover:shadow-lg hover:shadow-red-300' 
                                     : item === '=' 
