@@ -1,14 +1,9 @@
 import React, { use, useState } from "react";
+import Message from "./Message.jsx";
 
 const Totallist = () => {
 
-    const Items = [
-
-        {
-            item: "Devioand",
-            task: "Company Name",
-        },
-    ]
+  
 
     const [iteminput, setiteminput] = useState("");
     const [taskinput, settaskinput] = useState("");
@@ -26,13 +21,13 @@ const Totallist = () => {
     }
 
 
-    const [listitem, setlistitem] = useState(Items);
+    const [listitem, setlistitem] = useState([]);
     const addbutton = () => {
         handleNewItem(iteminput || '(?)', taskinput || '(?)');
         setiteminput("");
         settaskinput("");
         setButtonClicked(true);
-
+        alert('Item added successfully!');
     }
 
     const handleNewItem = (iteminput, taskinput) => {
@@ -41,7 +36,8 @@ const Totallist = () => {
             ...listitem,
             { item: iteminput, task: taskinput }
         ];
-        setlistitem(newlist)
+        setlistitem(newlist);
+
     }
 
     const [deletefun, setdeletefun] = useState([]);
@@ -49,6 +45,8 @@ const Totallist = () => {
     const deletebtn = (index) => {
         console.log('delete');
         setdeletefun([...deletefun, index]);
+        console.log(index);
+
     }
 
 
@@ -145,13 +143,19 @@ const Totallist = () => {
                                                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                                                 </svg>
-                                                <span className="hidden xs:inline">Delete</span>
+
                                             </button>
                                         </div>
                                     </div>
+
                                 </div>
                             ))}
+
+
+
                         </div>
+                        {listitem.length === 0 && <Message></Message>}
+
                     </div>
                 </div>
             </div>

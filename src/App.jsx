@@ -3,7 +3,8 @@ import Input from './Input.jsx';
 import Button from './Button.jsx';
 import Todo from "./Todo.jsx";
 import Keyinput from "./Keyinput.jsx";
-import Totallist from "./Totallist.jsx"
+import Totallist from "./Totallist.jsx";
+
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <div className="ml-4 mr-4 pb-6">
         <Totallist></Totallist>
       </div>
+     
 
     </>
   )

@@ -19,6 +19,14 @@ const Keyinput = () => {
             edit(newvalue);
             
         }
+
+        // Use the calculator backspace symbol '⌫' to trigger backspace functionality
+        if (event === '⌫') {
+            // Remove the last character from the current text
+            const newvalue = (text || '').slice(0, -1);
+            edit(newvalue);
+        }
+       
       
     }
     return (
